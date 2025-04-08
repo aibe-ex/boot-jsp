@@ -1,4 +1,4 @@
-package org.example.bootjsp.model.dto.repository;
+package org.example.bootjsp.model.repository.repository;
 
 import org.example.bootjsp.model.dto.RealEstate;
 import org.springframework.data.jpa.repository.JpaRepository;
