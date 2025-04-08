@@ -5,6 +5,11 @@
 </head>
 <body>
     <p>Hello JSP !!</p>
+    <% if (request.getParameter("name") != null) { %>
+        <p><%= request.getParameter("name")%>님 안녕하세요!</p>
+    <% } else { %>
+        <jsp:forward page="name.jsp"/>
+    <% } %>
     <p><%= request.getAttribute("data") %></p>
     <section>
         <form method="POST" style="display: flex; flex-direction: column; gap: 10px; padding: 10px; max-width: 240px; margin: auto;">
@@ -14,5 +19,6 @@
             <button>등록</button>
         </form>
     </section>
+    <jsp:include page="footer.jsp"/>
 </body>
 </html>
