@@ -1,3 +1,8 @@
-# Dockerfile 배포용
+# dockerfile 배포용
 server:
   port: 8080
+spring:
+  datasource:
+    url: ${MYSQL_URL}
+    username: ${MYSQL_USER}
+    password: ${MYSQL_PASSWORD}
