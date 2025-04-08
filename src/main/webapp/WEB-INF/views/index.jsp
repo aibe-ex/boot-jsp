@@ -6,8 +6,8 @@
 </head>
 <body>
     <p>Hello JSP !!</p>
-    <% if (request.getParameter("name") != null) { %>
-        <p><%= request.getParameter("name")%>님 안녕하세요!</p>
+    <% if (request.getParameter("username") != null) { %>
+        <p><%= request.getParameter("username")%>님 안녕하세요!</p>
     <% } else { %>
         <jsp:forward page="name.jsp"/>
     <% } %>

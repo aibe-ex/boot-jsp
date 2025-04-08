@@ -5,7 +5,7 @@
 </head>
 <body>
     <form>
-        <label>이름 : <input name="name"> </label>
+        <label>이름 : <input name="username"> </label>
         <button>전달</button>
     </form>
 </body>
